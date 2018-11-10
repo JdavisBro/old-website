@@ -1,0 +1,17 @@
+BODY { font-family: 'Comic Sans MS'; background: #ffffff;color: #1979ff;size: 20; }
+h1 {color: #1979ff;}
+h2 {color: #ff3243;}
+h3 {color: #1979ff;}
+h4 {color: #ff3243;}
+h5 {color: #1979ff;}
+h6 {color: #ff3243;}
+#clr1 {color: #1979ff;}
+#clr2 {color: #ff3243;}
+#black {color: #000000}
+#white {color: #ffffff}
+#linksame {color: inherit; text-decoration: none;}
+ul {list-style-position: inside;}
+#menu {background-color:black;border:solid;color: inherit; text-decoration: none;}
+#menu:hover {background-color:#ff3243;color: inherit; text-decoration: none;}
+#currentmenu {background-color:white;border:solid;color: inherit; text-decoration: none;}
+#currentmenu:hover {background-color:#ff3243;color: inherit; text-decoration: none;}

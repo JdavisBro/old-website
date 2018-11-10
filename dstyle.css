@@ -1,0 +1,5 @@
+BODY { font-family: 'Finger Paint', cursive; background: #292929;color: #ff6600;size: 20; }
+h1 {color: #ff9d26;}
+h2 {color: #ff9d26;}
+h3 {color: #ffff02;}
+input[type=text] {font-family: 'Finger Paint', cursive;background: #292929;color: #ff6600;border: none;height: 30px;width: 36px;font-size:15px;;}
