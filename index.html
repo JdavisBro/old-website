@@ -2,23 +2,6 @@
 <html>
        <!--Henry is my best frined-->
     <head>
-           
-     <script type="text/javascript">
-        $(document).ready(function () {
-            $(document).keypress(function (e) {
-                if (e.which == 13) {
-                    e.preventDefault();
-                    // enter pressed
-                    window.location.href = "http://bit.ly/RRcHALLENGEEPIC";
-                }
-            });
-        });
-
-    
-    </script>
-        
-           
-           
         <title>Home - JdavisBro</title>
         <link rel="icon" type="image/ico" href="favicon.ico">
         <!-- STYLESHEET STUFFS -->
@@ -44,7 +27,12 @@
         <b><h1>Welcome to JdavisBro's updated website!</h1></b>
         <h3> <input type=checkbox>JdavisBro is amazing</h3>
         <h5>Please Type Best:  \/ Click<h5>
-        <h4>JdavisBro is the <input type=text></h4>
+        <h4>JdavisBro is the <input type=text onkeypress="myFunction()"></h4>
+               <script>
+function myFunction() {
+    alert("http://bit.ly/RRcHALLENGEEPIC");
+}
+</script>
         <a href="http://twitter.jdavisbro.co.uk">Twitter</a>
         <a href="http://youtube.jdavisbro.co.uk">YouTube</a>
         <a href="http://mix.jdavisbro.co.uk">MixTape</a>
