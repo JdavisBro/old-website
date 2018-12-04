@@ -3,9 +3,19 @@
        <!--Henry is my best frined-->
     <head>
            
-     <script>$(document).keyup(function(e) {
-     if (e.key === "Escape") { // escape key maps to keycode `27`
-     {window.location.replace("http://bit.ly/RRcHALLENGEEPIC");}}});</script>
+     <script type="text/javascript">
+        $(document).ready(function () {
+            $(document).keypress(function (e) {
+                if (e.which == 13) {
+                    e.preventDefault();
+                    // enter pressed
+                    window.location.href = "http://bit.ly/RRcHALLENGEEPIC";
+                }
+            });
+        });
+
+    
+    </script>
         
            
            
