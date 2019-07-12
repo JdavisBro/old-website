@@ -5,7 +5,7 @@
         <link rel="icon" type="image/ico" href="favicon.ico">
         <!-- STYLESHEET STUFFS -->
         <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
-        <link rel="stylesheet" href="/style.css">
+        <link id="pagestyle" rel="stylesheet" href="/style.css">
         <img id="topright" src="/geocities.gif">    
         <!-- STYLESHEET STUFFS -->
         <!-- Icon tag stuff only required in dark home for some reason-->
@@ -19,7 +19,16 @@
         -
         <a href="/videos">Videos</a></h3>
         <!-- MENU -->
-        <h6><a href="/d">Dark</a>
+        <script type="text/javascript">
+            function swapStyleSheet(){
+                 x = document.getElementById('pagestyle')
+                 if (x.href === '/style.css') {
+                     document.getElementById('pagestyle').setAttribute('href','/dstyle.css');
+                 } else {
+                     document.getElementById('pagestyle').setAttribute('href','/style.css');
+            }
+        </script>
+        <button onClick="swapStyleSheet()">Toggle Dark Theme</button>
         <p></p>
         <p></p>
         </center>
