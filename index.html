@@ -22,7 +22,7 @@
         <script type="text/javascript">
             function swapStyleSheet(){
                  x = document.getElementById('pagestyle')
-                 if (x.href === '/style.css') {
+                 if (x.getAttribute("href") === '/style.css') {
                      document.getElementById('pagestyle').setAttribute('href','/dstyle.css');
                  } else {
                      document.getElementById('pagestyle').setAttribute('href','/style.css');
