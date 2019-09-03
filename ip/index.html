@@ -1,4 +1,6 @@
 <head><script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script><script>$.getJSON('https://api.ipify.org?format=json', function(data){
     document.getElementById("one").content = data.ip;
+    document.getElementById("two").innerHtmt = data.ip;
 });</script>
+<h1 id="two">Gaining IP</h1>
 <meta property="og:title" id="one" content="" /></head>
