@@ -27,7 +27,7 @@
   <script type="text/javascript" src="WEFiles/Client/WECollapsiblePanel-v22.js?v=63629939997"></script>
   <script type="text/javascript" src="WEFiles/EG/EGbe9bcb73/Js/StickyFloatMain-v263.js?v=63705210307"></script>
   <script type="text/javascript">
-   var speed="125"                   //delay in milliseconds between letters
+   var speed="120"                   //delay in milliseconds between letters
       var message=" WOOD FIRED PIZZA!"     //Title
       i="0"           
       var temptitle=""  
@@ -39,27 +39,8 @@
          if(i==message.length) {             //determines the end of the message
             i="1"                            //resets the counter to start over
             temptitle=""				      //resets the title to a blank value
-   		 if (message === " WOOD FIRED PIZZA!") {message=" HOW WILL PIZZA"} else {if (message=== " HOW WILL PIZZA") {message=" GET A JOB NOW?"} else{message=" WOOD FIRED PIZZA!"}}
-            setTimeout("titler()",10*speed)  //Restarts after delay to see it
-         } else {
-            setTimeout("titler()",speed)     //Add another character
-         }
-      }
-      titler();
-      var speed="130"                   //delay in milliseconds between letters
-      var message=" WOOD FIRED PIZZA!"     //Title
-      i="0"           
-      var temptitle=""  
-      function titler(){
-         if (!document.all&&!document.getElementById) return
-         document.title=temptitle+message.charAt(i)  //sets the initial title
-         temptitle=temptitle+message.charAt(i)       //increases the title by one letter
-         i++
-         if(i==message.length) {             //determines the end of the message
-            i="1"                            //resets the counter to start over
-            temptitle=""				      //resets the title to a blank value
-   		 if (message === " WOOD FIRED PIZZA!") {message=" HOW WILL PIZZA"} else {if (message=== " HOW WILL PIZZA") {message=" GET A JOB NOW?"} else{message=" WOOD FIRED PIZZA!"}}
-            setTimeout("titler()",15*speed)  //Restarts after delay to see it
+   		 if (message === " WOOD FIRED PIZZA!") {message=" HOW WILL PIZZA"} else {if (message=== " HOW WILL PIZZA") {message=" GET A JOB NOW?"} else {message=" WOOD FIRED PIZZA!"}}
+            setTimeout("titler()",speed*8)  //Restarts after delay to see it
          } else {
             setTimeout("titler()",speed)     //Add another character
          }
