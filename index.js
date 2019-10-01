@@ -61,4 +61,9 @@ function changeJdavisBox(){
     }
 }
 
+function setPage(name){
+    document.getElementsByTagName("title")[0].innerHTML = name + " - JdavisBro"
+    document.getElementsByClassName(name)[0].id = "currentmenu"
+}
+
 getStyle()

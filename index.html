@@ -1,35 +1,39 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Home - JdavisBro</title>
+        <title>JdavisBro</title>
+        <meta property="og:title" value="JdavisBro">
+        <meta property="og:description" value="JdavisBro Website Online Visit.">
+        <meta property="og:image" value="https://jdavisbro.github.io/images/pickaxe.gif">
         <link rel="icon" type="image/ico" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
-        <link id="pagestyle" rel="stylesheet" href="/style.css">
-        <img style="position: absolute;right: 0;top: 0;display: block;height: 125px;width: 125px;background: url(TRbanner.gif) no-repeat;text-indent: -999em;text-decoration: none;" src="/geocities.gif">    
+        <link id="pagestyle" rel="stylesheet" href="/style.css">    
         <script src="/index.js" type="text/javascript"></script>
         <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'>
-        <h2>Home</h2>
         <div class=menu>
-            <a id="currentmenu" href="/">&nbspHome&nbsp</a>
-            <a id="menu" href="/images">&nbspImages&nbsp</a>
-            <a id="menu" href="/videos">&nbspVideos&nbsp</a>
+            <a class="Home" id="menu" href="/">&nbspHome&nbsp</a>
+            <a class="Images" id="menu" href="/images">&nbspImages&nbsp</a>
+            <a class="Videos" id="menu" href="/videos">&nbspVideos&nbsp</a>
+            <a class="Playlists" id="menu" href="/playlists/">&nbspSpotify&nbsp</a>
             <a id="menu" href="/givememoney/">&nbspGiveMeMoney&nbsp</a>
+            <a id="menu" href="/agaumb/">&nbspAGAUMb&nbsp</a>
             <a id="menu" href="/why.html">&nbspwhy&nbsp</a>
             <a id="menu" href="/woodFiredPizza/index.htm">&nbspWood&Pizza&nbsp</a>
-        </div>
+		</div>
+		<img style="position: absolute;right: 0;top: 0;display: block;height: 125px;width: 125px;background: url(TRbanner.gif) no-repeat;text-indent: -999em;text-decoration: none;" src="/geocities.gif">    
         <br>
-        <button id="toggleStyle" onClick="swapStyleSheet()">Toggle Dark Theme</button>
-        <script>getStyle()</script>
-        <br>
+        <button id="toggleStyle" onClick="swapStyleSheet()">Dark</button>
+        <script>getStyle();setPage("Home")</script>
+        <br>div
     </head>
     <body>
         <b><h1>Welcome to JdavisBro's updateder website!</h1></b>
-        <a href="woodFiredPizza/index.htm"><div class="container" style="text-align:center;position:relative"><img src="woodFiredPizza\Files\Image\wood.png" style="height:10%;width:10%"><p style="position:absolute;left: 50%;top: 38%;transform: translate(-50%, -50%)">WOOD DID WHAT?<br>Find out what wood did to<br>pizza by clicking here!</p></div></a>
+        <a href="woodFiredPizza/index.htm"><div class="container" style="text-align:center;position:relative"><img src="woodFiredPizza\Files\Image\wood.png" style="height:10%;width:10%"><div style="position:absolute;left: 50%;top: 38%;transform: translate(-50%, -50%)"><p style="font-size:19px;font-weight: bolder;color:red">WOOD DID WHAT?</p>Find out what<br>wood did to<br>pizza by clicking<br>here!</div></div></a>
         <a href="why.html"><h6>why</h6></a>
-        <h3><input id="jdavisBox" name="jdavisBox" value="1" onchange="changeJdavisBox()" type=checkbox>JdavisBro is amazing</h3>
-        <h5>Please Type Best:  \/ Click<h5>
-        <h4>JdavisBro is the <input id="jdavis" onchange="changeJdavis()" type=text placeholder="Best"></h4>
+        <h3><input id="jdavisBox" name="jdavisBox" value="1" onchange="changeJdavisBox()" type=checkbox>JdavisBro is bad</h3>
+        <h4>JdavisBro is<br><input id="jdavis" onchange="changeJdavis()" type=text placeholder="the worst"></h4>
         <script>setJdavis();setJdavisBox()</script>
-        <a href="playlists">Playlists</a>
         <h3>JdavisBro made a game:</h3>
         <a href="/agaumb"><h2>A Game About Ur Mums bananas</h2></a>
+    </body>
+</html>

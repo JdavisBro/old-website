@@ -1,6 +1,11 @@
 <!DOCTYPE HTML>
-<script src="index.js"></script><script>function cookie3() {if (getCookie('theme')==="1") {return('y')} else {return('n')}}</script>
-<button onclick="document.getElementById('cookie').innerHTML=document.cookie;document.getElementById('cookie2').innerHTML=getCookie('theme')" style="width:100%;height:100%"></button>
-<p id="cookie"></p><p id="cookie2"></p>
-<button onclick="document.getElementById('cookie3').innerHTML=cookie3()" style="width:100%;height:100%"></button>
-<p id="cookie3"></p>
+
+<script src="index.js"></script>
+
+<button onclick="document.getElementById('cookie').innerHTML=document.cookie">All Cookies</button>
+<p id="cookie"></p>
+
+<input type="text" id="cookieInput" placeholder="Cookie"><button onclick="document.getElementById('cookie2').innerHTML = getCookie(document.getElementById('cookieInput').value)">Get</button>
+<p id="cookie2"></p>
+
+<input type="text" id="cookieChInput" placeholder="Cookie"><input type="text" id="cookieChInput1" placeholder="Value"><button onclick="setCookie(document.getElementById('cookieChInput').value,document.getElementById('cookieChInput1').value)">Set</button>

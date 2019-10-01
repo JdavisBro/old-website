@@ -4,7 +4,7 @@ h1 {color: #ff9d26;}
 h2 {color: #ff9d26;}
 h3 {color: #ffff02;}
 a:visited {color: darkcyan;}
-input[type=text] {font-family: 'Finger Paint', cursive;background: #292929;color: #ff6600;border-style: dotted;height: 30px;width: 36px;font-size:15px;;}
+input[type=text] {font-family: 'Finger Paint', cursive;background: #292929;color: #ff6600;border: none;height: 30px;font-size:15px;;}
 #menu {background-color:#292929;border:solid;color: inherit; text-decoration: none; border-width: 2px;font-size: 22.5px;}
 #menu:hover {background-color:#303030;color: inherit; text-decoration: none;}
 #currentmenu {background-color:#707070;border:solid;color: inherit; text-decoration: none; border-width: 2px;font-size: 22.5px;}
