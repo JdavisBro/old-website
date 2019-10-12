@@ -20,28 +20,27 @@ function setCookie(cname, cvalue) {;
 function getStyle(){
         theme = getCookie('theme')
         if (theme==="1") {
-            document.getElementById('pagestyle').setAttribute('href','/dstyle.css');
-            document.getElementById('pagestyle1').setAttribute('href','/style.css');
+            document.getElementById('pagestyle1').setAttribute('href','/dstyle.css');
+            document.getElementById('pagestyle').setAttribute('href','/style.css');
             document.getElementById('toggleStyle').innerHTML = 'Light';
         } 
         else {
-            document.getElementById('pagestyle').setAttribute('href','/style.css');
-            document.getElementById('pagestyle1').setAttribute('href','/dstyle.css');
+            document.getElementById('pagestyle1').setAttribute('href','/style.css');
+            document.getElementById('pagestyle').setAttribute('href','/dstyle.css');
             document.getElementById('toggleStyle').innerHTML = 'Dark';
         }
     }
 
 function swapStyleSheet(){
-    x = document.getElementById('pagestyle')
-    if (x.getAttribute("href") === '/style.css') {
+    if (document.getElementById('pagestyle1').getAttribute("href") === '/style.css') {
         setCookie('theme','1')
-        document.getElementById('pagestyle').setAttribute('href','/dstyle.css');
-        document.getElementById('pagestyle1').setAttribute('href','/style.css');
+        document.getElementById('pagestyle1').setAttribute('href','/dstyle.css');
+        document.getElementById('pagestyle').setAttribute('href','/style.css');
         document.getElementById('toggleStyle').innerHTML = 'Light';
     } else {
         setCookie('theme','0')
-        document.getElementById('pagestyle').setAttribute('href','/style.css');
-        document.getElementById('pagestyle1').setAttribute('href','/dstyle.css');
+        document.getElementById('pagestyle1').setAttribute('href','/style.css');
+        document.getElementById('pagestyle').setAttribute('href','/dstyle.css');
         document.getElementById('toggleStyle').innerHTML = 'Dark';      
         }
    }
