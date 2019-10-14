@@ -76,24 +76,26 @@ function setPage(name){
     document.getElementsByClassName(name)[0].id = "currentmenu"
 }
 
-function bigLion(){
-    var size = 1;
-    var plmi = 0;
+function bigLion(size,plmi){
+    if (size == none) {
+        var size = 1;
+        var plmi = 0;
+    }
     if (plmi == 0) {
         size = size + 1
         document.getElementById("biglion").style.width = size + '%';
         document.getElementById("biglion").style.height = size + '%';
     } else {
         size = size -1
-        document.getElementById("biglion").style.width = size - '%';
-        document.getElementById("biglion").style.height = size - '%';
+        document.getElementById("biglion").style.width = size + '%';
+        document.getElementById("biglion").style.height = size + '%';
     }
     if (size > 99) {
         plmi = 1
     } else if (size < 1) {
         plmi = 0
     }
-    setTimeout(bigLion(),500)
+    setTimeout(bigLion(size,plmi),500)
 }
 
 getStyle()
