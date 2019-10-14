@@ -76,4 +76,25 @@ function setPage(name){
     document.getElementsByClassName(name)[0].id = "currentmenu"
 }
 
+function bigLion(){
+    var size = 1;
+    var plmi = 0;
+    while (true) {
+        if (plmi == 0) {
+            size = size + 1
+            document.getElementById("biglion").style.width = size + '%';
+            document.getElementById("biglion").style.height = size + '%';
+        } else {
+            size = size -1
+            document.getElementById("biglion").style.width = size - '%';
+            document.getElementById("biglion").style.height = size - '%';
+        }
+        if (size == 100) {
+            plmi = 1
+        } else if (size == 0) {
+            plmi = 0
+        }
+    }
+}
+
 getStyle()
