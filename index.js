@@ -88,12 +88,12 @@ function bigLion(){
         document.getElementById("biglion").style.width = size - '%';
         document.getElementById("biglion").style.height = size - '%';
     }
-    if (size == 100) {
+    if (size > 99) {
         plmi = 1
-    } else if (size == 0) {
+    } else if (size < 1) {
         plmi = 0
     }
-    setTimeout(bigLion(),100)
+    setTimeout(bigLion(),500)
 }
 
 getStyle()
