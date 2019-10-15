@@ -89,7 +89,7 @@ function bigLion(size,plmi){
     }
     if (size > 99) {
         plmi = 1
-    } else if (size < 1) {
+    } else if (size < -99) {
         plmi = 0
     }
     setTimeout(bigLion,bigspeed,size,plmi)
