@@ -80,12 +80,26 @@ function bigLion(size,plmi){
     var bigspeed = 75
     if (plmi == 0) {
         size = size + 1
-        document.getElementById("biglion").style.width = size + '%';
-        document.getElementById("biglion").style.height = size + '%';
+        if (size < 0) {
+            document.getElementById("biglion").style.width = size * -1 + '%';
+            document.getElementById("biglion").style.height = size * -1 + '%';
+            document.getElementById("biglion").style.transform = "scaleX(-1)";
+        } else {  
+            document.getElementById("biglion").style.width = size + '%';
+            document.getElementById("biglion").style.height = size + '%';
+            document.getElementById("biglion").style.transform = "scaleX(-1)";
+        }
     } else {
         size = size -1
-        document.getElementById("biglion").style.width = size + '%';
-        document.getElementById("biglion").style.height = size + '%';
+        if (size < 0) {
+            document.getElementById("biglion").style.width = size * -1 + '%';
+            document.getElementById("biglion").style.height = size * -1 + '%';
+            document.getElementById("biglion").style.transform = "scaleX(-1)";
+        } else {
+            document.getElementById("biglion").style.width = size + '%';
+            document.getElementById("biglion").style.height = size + '%';
+            document.getElementById("biglion").style.transform = "scaleX(1)";
+        }
     }
     if (size > 99) {
         plmi = 1
