@@ -87,7 +87,7 @@ function bigLion(size,plmi){
         } else {  
             document.getElementById("biglion").style.width = size + '%';
             document.getElementById("biglion").style.height = size + '%';
-            document.getElementById("biglion").style.transform = "scaleX(-1)";
+            document.getElementById("biglion").style.transform = "scaleX(1)";
         }
     } else {
         size = size -1
