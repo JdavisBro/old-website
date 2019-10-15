@@ -91,7 +91,7 @@ function bigLion(size,plmi){
     } else if (size < 1) {
         plmi = 0
     }
-    setTimeout("bigLion",500,size,plmi)
+    setTimeout(bigLion,500,size,plmi)
 }
 
 getStyle()
