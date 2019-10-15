@@ -77,7 +77,7 @@ function setPage(name){
 }
 
 function bigLion(size,plmi){
-    var bigspeed = 100
+    var bigspeed = 75
     if (plmi == 0) {
         size = size + 1
         document.getElementById("biglion").style.width = size + '%';
