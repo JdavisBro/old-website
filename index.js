@@ -104,5 +104,3 @@ function bigLion(size,plmi){
     }
     setTimeout(bigLion,bigspeed,size,plmi)
 }
-
-getStyle()
