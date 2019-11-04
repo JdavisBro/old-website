@@ -20,27 +20,23 @@ function setCookie(cname, cvalue) {;
 function getStyle(){
         theme = getCookie('theme')
         if (theme==="1") {
-            document.getElementById('pagestyle1').setAttribute('href','/dstyle.css');
-            document.getElementById('pagestyle').setAttribute('href','/style.css');
+            document.getElementById('pagetheme').setAttribute('href','/dark.css');
             document.getElementById('toggleStyle').innerHTML = 'Light';
         } 
         else {
-            document.getElementById('pagestyle1').setAttribute('href','/style.css');
-            document.getElementById('pagestyle').setAttribute('href','/dstyle.css');
+            document.getElementById('pagetheme').setAttribute('href','/light.css');
             document.getElementById('toggleStyle').innerHTML = 'Dark';
         }
     }
 
 function swapStyleSheet(){
-    if (document.getElementById('pagestyle1').getAttribute("href") === '/style.css') {
+    if (document.getElementById('pagetheme').getAttribute("href") === '/light.css') {
         setCookie('theme','1')
-        document.getElementById('pagestyle1').setAttribute('href','/dstyle.css');
-        document.getElementById('pagestyle').setAttribute('href','/style.css');
+        document.getElementById('pagetheme').setAttribute('href','/dark.css');
         document.getElementById('toggleStyle').innerHTML = 'Light';
     } else {
         setCookie('theme','0')
-        document.getElementById('pagestyle1').setAttribute('href','/style.css');
-        document.getElementById('pagestyle').setAttribute('href','/dstyle.css');
+        document.getElementById('pagetheme').setAttribute('href','/light.css');
         document.getElementById('toggleStyle').innerHTML = 'Dark';      
         }
    }
@@ -80,7 +76,7 @@ function bigLion(size,plmi){
     var bigspeed = 25
     if (plmi == 0) {
         size = size + 1
-        if (size < 0) {
+        if (size < 0) {swapStyleSheet
             document.getElementById("biglion").style.width = size * -1 + '%';
             document.getElementById("biglion").style.transform = "scaleX(-1)";
         } else {  

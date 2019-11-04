@@ -1,15 +1,80 @@
-HEAD { text-align:center }
-BODY { font-family: 'Finger Paint', cursive; background: #ff9400;color: #aa00ff;size: 20; text-align: center}
-h1 {color: #ee00ff;}
-h2 {color: #cc00ff;}
-h3 {color: #aa00ff;}
-a {color: #dd00ff}
-a:visited {color: #f060ff;}
-input[type=text] {font-family: 'Finger Paint', cursive;background: #ff9400;color: #aa00ff;border:none;height: 30px;width: 100%;size:1em;font-size:1em;font-weight: bolder;text-align:center;}
-#menu {background-color:orange;border:solid;color: inherit; text-decoration: none; border-width: 2px;font-size: 22.5px;}
-#menu:hover {background-color:#ffc000;color: inherit; text-decoration: none;}
-#currentmenu {background-color:orangered;border:solid;color: inherit; text-decoration: none; border-width: 2px;font-size: 22.5px;}
-#currentmenu:hover {background-color:#ff6000;color: inherit; text-decoration: none;}
-.sticky {position: sticky;text-align:center;top:-1px;left:1px}
-.menu {padding:6px;background-color:#ff9400}
-button {border-color:#707070;background-color:#292929;height:40px;color:#ff6600;font-family: 'Finger Paint', cursive}
+HEAD {
+    text-align:center;
+}
+BODY {
+    font-family: 'Finger Paint', cursive;
+    background: var(--bg-colour);
+    color: var(--main-text-colour);
+    size: 20;
+    text-align: center;
+}
+h1 {
+    color: var(--h1-colour);
+}
+h2 {
+    color: var(--h2-colour);
+}
+h3 {
+    color: var(--h3-colour);
+}
+a {
+    color: var(--link-colour);
+}
+a:visited {
+    color: var(--visited-link-colour);
+}
+input[type=text] {
+    font-family: 'Finger Paint', cursive;
+    background: var(--bg-colour);
+    color: var(--h4-colour);
+    border:none;
+    height: 30px;
+    width: 100%;
+    size:1em;
+    font-size:1em;
+    font-weight: bolder;
+    text-align:center;
+}
+#menu {
+    background-color:var(--bg-colour);
+    border:solid;
+    color: inherit;
+    text-decoration: none;
+    border-width: 2px;
+    font-size: 22.5px;
+}
+#menu:hover {
+    background-color:var(--hover-menu-colour);
+    color: inherit;
+    text-decoration: none;
+}
+#currentmenu {
+    background-color:var(--current-menu-colour);
+    border:solid;
+    color: inherit;
+    text-decoration: none;
+    border-width: 2px;
+    font-size: 22.5px;
+}
+#currentmenu:hover {
+    background-color:var(--hover-current-menu-colour);
+    color: inherit;
+    text-decoration: none;
+}
+.sticky {
+    position: sticky;
+    text-align:center;
+    top:-1px;
+    left:1px;
+}
+.menu {
+    padding:6px;
+    background-color:var(--bg-colour);
+}
+button {
+    border-color:var(--button-border-colour);
+    background-color:var(--button-background-colour);
+    height:40px;
+    color:var(--button-text-colour);
+    font-family: 'Finger Paint', cursive;
+}

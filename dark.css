@@ -1,0 +1,15 @@
+html {
+    --bg-colour: #292929;
+    --main-text-colour: #ff6600;
+    --h1-colour: #ff9d26;
+    --h2-colour: #ff9d26;
+    --h3-colour: #ffff02;
+    --link-colour: cyan;
+    --visited-link-colour: darkcyan;
+    --hover-menu-colour: #303030;
+    --current-menu-colour: #707070;
+    --hover-current-menu-colour: #909090;
+    --button-border-colour: orangered;
+    --button-background-colour: #ff9400;
+    --button-text-colour: #aa00ff;
+}
