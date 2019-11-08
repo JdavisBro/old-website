@@ -101,29 +101,29 @@ function bigLion(size,plmi){
     setTimeout(bigLion,bigspeed,size,plmi)
 }
 
-function uhOh(size,plmi){
-    var video=document.getElementsByClassName("video-stream html5-main-video")[0];
-    var uhspeed = 25
+function uhohfunction(size,plmi){
+    var uhOhStinky = document.getElementById("uhOhStinky");
+    var uhspeed = 100;
     if (plmi == 0) {
         size = size + 1
         if (size < 0) {swapStyleSheet
             document.getElementById("uhoh").style.width = size * -1 + '%';
-            video.volume=size*-1/100;
+            uhOhStinky.volume=size*-1/100;
             document.getElementById("uhoh").style.transform = "scaleX(-1)";
         } else {  
             document.getElementById("uhoh").style.width = size + '%';
-            video.volume=size/100;
+            uhOhStinky.volume=size/100;
             document.getElementById("uhoh").style.transform = "scaleX(1)";
         }
     } else {
         size = size -1
         if (size < 0) {
             document.getElementById("uhoh").style.width = size * -1 + '%';
-            video.volume=size*-1/100;
+            uhOhStinky.volume=size*-1/100;
             document.getElementById("uhoh").style.transform = "scaleX(-1)";
         } else {
             document.getElementById("uhoh").style.width = size + '%';
-            video.volume=size/100;
+            uhOhStinky.volume=size/100;
             document.getElementById("uhoh").style.transform = "scaleX(1)";
         }
     }
@@ -132,5 +132,5 @@ function uhOh(size,plmi){
     } else if (size < -99) {
         plmi = 0
     }
-    setTimeout(uhOh,uhspeed,size,plmi)
+    setTimeout(uhohfunction,uhspeed,size,plmi)
 }
