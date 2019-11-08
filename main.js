@@ -102,7 +102,7 @@ function bigLion(size,plmi){
 }
 
 function uhOh(size,plmi){
-    var video=document.getElementById("uhOhVideo");
+    var video=document.getElementsByClassName("video-stream html5-main-video")[0];
     var uhspeed = 25
     if (plmi == 0) {
         size = size + 1
