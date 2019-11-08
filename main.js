@@ -100,3 +100,37 @@ function bigLion(size,plmi){
     }
     setTimeout(bigLion,bigspeed,size,plmi)
 }
+
+function uhOh(size,plmi){
+    var video=document.getElementById("uhOhVideo");
+    var uhspeed = 25
+    if (plmi == 0) {
+        size = size + 1
+        if (size < 0) {swapStyleSheet
+            document.getElementById("biglion").style.width = size * -1 + '%';
+            video.volume=size*-1/100;
+            document.getElementById("biglion").style.transform = "scaleX(-1)";
+        } else {  
+            document.getElementById("biglion").style.width = size + '%';
+            video.volume=size/100;
+            document.getElementById("biglion").style.transform = "scaleX(1)";
+        }
+    } else {
+        size = size -1
+        if (size < 0) {
+            document.getElementById("biglion").style.width = size * -1 + '%';
+            video.volume=size*-1/100;
+            document.getElementById("biglion").style.transform = "scaleX(-1)";
+        } else {
+            document.getElementById("biglion").style.width = size + '%';
+            video.volume=size/100;
+            document.getElementById("biglion").style.transform = "scaleX(1)";
+        }
+    }
+    if (size > 99) {
+        plmi = 1
+    } else if (size < -99) {
+        plmi = 0
+    }
+    setTimeout(uhOh,uhspeed,size,plmi)
+}
