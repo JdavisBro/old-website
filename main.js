@@ -107,24 +107,24 @@ function uhOh(size,plmi){
     if (plmi == 0) {
         size = size + 1
         if (size < 0) {swapStyleSheet
-            document.getElementById("biglion").style.width = size * -1 + '%';
+            document.getElementById("uhoh").style.width = size * -1 + '%';
             video.volume=size*-1/100;
-            document.getElementById("biglion").style.transform = "scaleX(-1)";
+            document.getElementById("uhoh").style.transform = "scaleX(-1)";
         } else {  
-            document.getElementById("biglion").style.width = size + '%';
+            document.getElementById("uhoh").style.width = size + '%';
             video.volume=size/100;
-            document.getElementById("biglion").style.transform = "scaleX(1)";
+            document.getElementById("uhoh").style.transform = "scaleX(1)";
         }
     } else {
         size = size -1
         if (size < 0) {
-            document.getElementById("biglion").style.width = size * -1 + '%';
+            document.getElementById("uhoh").style.width = size * -1 + '%';
             video.volume=size*-1/100;
-            document.getElementById("biglion").style.transform = "scaleX(-1)";
+            document.getElementById("uhoh").style.transform = "scaleX(-1)";
         } else {
-            document.getElementById("biglion").style.width = size + '%';
+            document.getElementById("uhoh").style.width = size + '%';
             video.volume=size/100;
-            document.getElementById("biglion").style.transform = "scaleX(1)";
+            document.getElementById("uhoh").style.transform = "scaleX(1)";
         }
     }
     if (size > 99) {
