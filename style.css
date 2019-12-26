@@ -7,7 +7,6 @@ BODY {
     color: var(--main-text-colour);
     size: 20;
     text-align: center;
-    background-image: url("/images/christmasLights.png");background-size:25%;background-repeat: repeat-x;background-position-y: 120px; /* Merry Christmas!*/
 }
 h1 {
     color: var(--h1-colour);
