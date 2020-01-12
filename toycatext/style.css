@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "cartoonist";
+    src: url('cartoonist_kooky.ttf')  format('truetype');
+}
+
+.toycaText{
+    position: absolute;
+    z-index: 100;
+    left: 10px;
+    top: 0px;
+    color:white;
+    font-family: cartoonist;
+    font-size: 100px;
+    padding-bottom: 10px;
+    /*-webkit-text-stroke: 5px black;*/
+    text-shadow:
+    0px 0px grey, 0px -1px grey, 0px 1px grey, 0px 2px grey, 0px 3px grey, 0px 4px grey, 0px 5px grey, 0px 6px grey, /*0px 7px grey, 0px 8px grey, 0px 10px grey,*/
+    4px  0px 0 rgba(0,0,0,0.7), 4px  1px 0 rgba(0,0,0,0.7), 3px  2px 0 rgba(0,0,0,0.7), 3px  3px 0 rgba(0,0,0,0.7), 2px  3px 0 rgba(0,0,0,0.7), 1px  4px 0 rgba(0,0,0,0.7),
+    0px  4px 0 rgba(0,0,0,0.7), -1px  4px 0 rgba(0,0,0,0.7), -2px  3px 0 rgba(0,0,0,0.7), -3px  3px 0 rgba(0,0,0,0.7), -3px  2px 0 rgba(0,0,0,0.7), -4px  1px 0 rgba(0,0,0,0.7),
+    -4px  0px 0 rgba(0,0,0,0.7), -4px -1px 0 rgba(0,0,0,0.7), -3px -2px 0 rgba(0,0,0,0.7), -3px -3px 0 rgba(0,0,0,0.7), -2px -3px 0 rgba(0,0,0,0.7), -1px -4px 0 rgba(0,0,0,0.7),
+    0px -4px 0 rgba(0,0,0,0.7), 1px -4px 0 rgba(0,0,0,0.7), 2px -3px 0 rgba(0,0,0,0.7), 3px -3px 0 rgba(0,0,0,0.7), 3px -2px 0 rgba(0,0,0,0.7), 4px -1px 0 rgba(0,0,0,0.7);
+}
+
+.toycaText2 {
+    z-index: 99;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    color:grey;
+    font-family: cartoonist;
+    font-size: 100px;
+    text-shadow:
+    4px  0px 0 rgba(0,0,0,0.7), 4px  1px 0 rgba(0,0,0,0.7), 3px  2px 0 rgba(0,0,0,0.7), 3px  3px 0 rgba(0,0,0,0.7), 2px  3px 0 rgba(0,0,0,0.7), 1px  4px 0 rgba(0,0,0,0.7),
+    0px  4px 0 rgba(0,0,0,0.7), -1px  4px 0 rgba(0,0,0,0.7), -2px  3px 0 rgba(0,0,0,0.7), -3px  3px 0 rgba(0,0,0,0.7), -3px  2px 0 rgba(0,0,0,0.7), -4px  1px 0 rgba(0,0,0,0.7),
+    -4px  0px 0 rgba(0,0,0,0.7), -4px -1px 0 rgba(0,0,0,0.7), -3px -2px 0 rgba(0,0,0,0.7), -3px -3px 0 rgba(0,0,0,0.7), -2px -3px 0 rgba(0,0,0,0.7), -1px -4px 0 rgba(0,0,0,0.7),
+    0px -4px 0 rgba(0,0,0,0.7), 1px -4px 0 rgba(0,0,0,0.7), 2px -3px 0 rgba(0,0,0,0.7), 3px -3px 0 rgba(0,0,0,0.7), 3px -2px 0 rgba(0,0,0,0.7), 4px -1px 0 rgba(0,0,0,0.7);
+}
+
+.toycaText1{
+    position: absolute;
+    z-index: 105;
+    left: 10px;
+    top: 100px;
+    font-family: "cartoonist";
+    font-size: 98px;
+    background-image: linear-gradient(to bottom, #f9f945 0%,#fc8600 63%);
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.toycaText12 {
+    text-shadow:
+     0px 1px #803201, 0px 2px #803201, 0px 3px #803201, 0px 4px #803201, 0px 5px #803201, 0px 6px #803201, /*0px 7px grey, 0px 8px grey, 0px 10px grey,*/
+     4px  0px 0 rgba(0,0,0,0.7), 4px  1px 0 rgba(0,0,0,0.7), 3px  2px 0 rgba(0,0,0,0.7), 3px  3px 0 rgba(0,0,0,0.7), 2px  3px 0 rgba(0,0,0,0.7), 1px  4px 0 rgba(0,0,0,0.7),
+     0px  4px 0 rgba(0,0,0,0.7), -1px  4px 0 rgba(0,0,0,0.7), -2px  3px 0 rgba(0,0,0,0.7), -3px  3px 0 rgba(0,0,0,0.7), -3px  2px 0 rgba(0,0,0,0.7), -4px  1px 0 rgba(0,0,0,0.7),
+     -4px  0px 0 rgba(0,0,0,0.7), -4px -1px 0 rgba(0,0,0,0.7), -3px -2px 0 rgba(0,0,0,0.7), -3px -3px 0 rgba(0,0,0,0.7), -2px -3px 0 rgba(0,0,0,0.7), -1px -4px 0 rgba(0,0,0,0.7),
+     0px -4px 0 rgba(0,0,0,0.7), 1px -4px 0 rgba(0,0,0,0.7), 2px -3px 0 rgba(0,0,0,0.7), 3px -3px 0 rgba(0,0,0,0.7), 3px -2px 0 rgba(0,0,0,0.7), 4px -1px 0 rgba(0,0,0,0.7);
+     color: rgb(0,0,0,.1);
+    position: absolute;
+    z-index: 104;
+    left: 10px;
+    top: 98px;
+    font-family: "cartoonist";
+    font-size: 100px;
+}
+
+.toycaText13 {
+    position: absolute;
+    left: 10px;
+    top: 105px;
+    z-index: 103;
+    color: #803201;
+    font-family: cartoonist;
+    font-size: 100px;
+    text-shadow:
+    4px  0px 0 rgba(0,0,0,0.7), 4px  1px 0 rgba(0,0,0,0.7), 3px  2px 0 rgba(0,0,0,0.7), 3px  3px 0 rgba(0,0,0,0.7), 2px  3px 0 rgba(0,0,0,0.7), 1px  4px 0 rgba(0,0,0,0.7),
+    0px  4px 0 rgba(0,0,0,0.7), -1px  4px 0 rgba(0,0,0,0.7), -2px  3px 0 rgba(0,0,0,0.7), -3px  3px 0 rgba(0,0,0,0.7), -3px  2px 0 rgba(0,0,0,0.7), -4px  1px 0 rgba(0,0,0,0.7),
+    -4px  0px 0 rgba(0,0,0,0.7), -4px -1px 0 rgba(0,0,0,0.7), -3px -2px 0 rgba(0,0,0,0.7), -3px -3px 0 rgba(0,0,0,0.7), -2px -3px 0 rgba(0,0,0,0.7), -1px -4px 0 rgba(0,0,0,0.7),
+    0px -4px 0 rgba(0,0,0,0.7), 1px -4px 0 rgba(0,0,0,0.7), 2px -3px 0 rgba(0,0,0,0.7), 3px -3px 0 rgba(0,0,0,0.7), 3px -2px 0 rgba(0,0,0,0.7), 4px -1px 0 rgba(0,0,0,0.7);
+}
