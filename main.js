@@ -67,11 +67,6 @@ function changeJdavisBox(){
     }
 }
 
-function setPage(name){
-    document.getElementsByTagName("title")[0].innerHTML = name + " - JdavisBro"
-    document.getElementsByClassName(name)[0].id = "currentmenu"
-}
-
 function bigLion(size,plmi){
     var bigspeed = 25
     if (plmi == 0) {
