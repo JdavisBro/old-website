@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "fontYahoo";
+    src: url(fontYahoo.ttf)
+}
+
+html {
+    font-family: "fontYahoo";
+}
+
+body {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.design {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #d0d0d0;
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.designName {
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 180px;
+    text-align: center;
+}
+
+.imgOne {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 45px;
+    left: 0;
+}
+
+.imgTwo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 45px;
+    right: 0;
+}
+
+.tag {
+    position: absolute;
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.tone {
+    top: 130px;
+    left: 5px;
+}
+
+.ttwo {
+    top: 130px;
+    right: 5px;
+}
+
+.tthree {
+    top: 152px;
+    left: 5px;
+}
+
+.tfour {
+    top: 152px;
+    right: 5px;
+}
+
+#status::before {
+    content: "Status: ";
+}
