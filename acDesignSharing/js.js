@@ -34,11 +34,13 @@ function loadContinue() {
         var qrCodeElement = document.createElement("IMG");
         qrCodeElement.classList.add("imgOne");
         qrCodeElement.src = x["qrCode"];
+        qrCodeElement.onclick = function() {location.href = x["qrCode"];}
         divElement.appendChild(qrCodeElement);
 
         var imageElement = document.createElement("IMG");
         imageElement.classList.add("imgTwo");
         imageElement.src = x["image"];
+        imageElement.onclick = function() {location.href = x["image"];}
         divElement.appendChild(imageElement);
 
         var tagNumber = 0;
