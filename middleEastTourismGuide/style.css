@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Sen";
+    src: url(Sen-Regular.ttf)
+}
+@font-face {
+    font-family: "Sen Bold";
+    src: url(Sen-Bold.ttf)
+}
+
+html {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg);
+    background-size: cover;
+    background-position-y: -110px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    animation-name: "backgroundChange";
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backgroundChange {
+    0% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
+    19% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
+    20% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
+    39% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
+    40% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
+    59% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
+    60% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
+    79% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
+    80% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
+    99% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
+}
+
+@keyframes backgroundChangeOpacity {
+    0% {opacity: 1}    1% {opacity: 1}    3% {opacity: 0}
+    17% {opacity: 0}    19% {opacity: 1}    21% {opacity: 1}    23% {opacity: 0}
+    37% {opacity: 0}    39% {opacity: 1}    41% {opacity: 1}    43% {opacity: 0}
+    57% {opacity: 0}    59% {opacity: 1}    61% {opacity: 1}    63% {opacity: 0}
+    77% {opacity: 0}    79% {opacity: 1}    81% {opacity: 1}    83% {opacity: 0}
+    97% {opacity: 0}    99% {opacity: 1}    100% {opacity: 1}
+}
+
+html::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundOpacity {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    animation-name: "backgroundChangeOpacity";
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+#top {
+    top: 0;
+    position:absolute;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    height: 5%
+}
+
+.menuOption {
+    font-family: 'Sen';
+    text-decoration: none;
+    color: black;
+    font-size: 152%;
+    display: inline-block;
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-shadow: 0 0 5px white,-1px -1px 5px white,1px 1px 5px white,-1px 1px 5px white,1px -1px 5px white,1px 0 5px white,0px 1px 5px white,0px -1px 5px white,-1px 0px 5px white;}
+
+.menuOption:hover {
+    animation-name: "backgroundDarkening";
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backgroundDarkening {
+    0% {background-color: rgba(0, 0, 0, 0);}
+    100% {background-color: rgba(0, 0, 0, 0.308);}
+}
+
+.title {
+    text-align: center;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    font-size: 100px;
+    color: white;
+    font-family: "Sen Bold";
+    text-shadow: 0 0 5px black,-1px -1px 5px black,1px 1px 5px black,-1px 1px 5px black,1px -1px 5px black,1px 0 5px black,0px 1px 5px black,0px -1px 5px black,-1px 0px 5px black;
+    opacity: 0.8;
+}
+
+.downArrow {
+    text-align: center;
+    left: 47.5%;
+    width: 5%;
+    position: absolute;
+    top: 85%;
+    filter: drop-shadow(0 0 0.75rem black);
+    opacity: 0.8;
+}
+
+.contentBelow {
+    width: 99%;
+    left: 0.5%;
+    background-color: white;
+    position: absolute;
+    height: 300%;
+    top: 100%;
+    border-radius: 20px;
+}
+
+.contentBelowContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.topButton {
+    bottom: 0;
+    position: absolute;
+    width: 5%;
+    left: 47.5%;
+    transform: scaleY(-1);
+    filter: drop-shadow(0 0 0.75rem black);
+    opacity: 0.8;
+}
+
+.bottomBox {
+    position: absolute;
+    height: 10%;
+    top: 400%;
+    width: 100%; 
+}
