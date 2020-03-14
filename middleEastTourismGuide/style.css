@@ -8,6 +8,7 @@
 }
 
 html {
+    --imageAnimationTime: 17.5s;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg);
     background-size: cover;
     background-position-y: -110px;
@@ -19,31 +20,32 @@ html {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     animation-name: backgroundChange;
-    animation-duration: 25s;
+    animation-duration: var(--imageAnimationTime);
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
 
 @keyframes backgroundChange {
-    0% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
-    19% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
-    20% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
-    39% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
-    40% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
-    59% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
-    60% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
-    79% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
-    80% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
-    99% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
+    0% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}    19% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
+    20% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}    39% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
+    40% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}    59% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
+    60% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}    79% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
+    80% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}    99% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
 }
 
 @keyframes backgroundChangeOpacity {
-    0% {opacity: 1}    1% {opacity: 1}    3% {opacity: 0}
-    17% {opacity: 0}    19% {opacity: 1}    21% {opacity: 1}    23% {opacity: 0}
-    37% {opacity: 0}    39% {opacity: 1}    41% {opacity: 1}    43% {opacity: 0}
-    57% {opacity: 0}    59% {opacity: 1}    61% {opacity: 1}    63% {opacity: 0}
-    77% {opacity: 0}    79% {opacity: 1}    81% {opacity: 1}    83% {opacity: 0}
-    97% {opacity: 0}    99% {opacity: 1}    100% {opacity: 1}
+    0% {opacity: 1;background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
+    1% {opacity: 1}    2% {opacity: 0}
+    16% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
+    17% {opacity: 0}    19% {opacity: 1}    21% {opacity: 1}    22% {opacity: 0}
+    36% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
+    37% {opacity: 0}    39% {opacity: 1}    41% {opacity: 1}    42% {opacity: 0}
+    56% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
+    57% {opacity: 0}    59% {opacity: 1}    61% {opacity: 1}    62% {opacity: 0}
+    76% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
+    77% {opacity: 0}    79% {opacity: 1}    81% {opacity: 1}    82% {opacity: 0}
+    96% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
+    97% {opacity: 0}    99% {opacity: 1}    100% {opacity: 1;background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
 }
 
 html::-webkit-scrollbar { /* WebKit */
@@ -59,11 +61,14 @@ body {
 .backgroundOpacity {
     height: 100%;
     width: 100%;
-    position: absolute;
-    background-color: black;
-    opacity: 0;
+    position: fixed;
+    background-size: cover;
+    background-position-y: -110px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
     animation-name: backgroundChangeOpacity;
-    animation-duration: 25s;
+    animation-duration: var(--imageAnimationTime);
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     z-index: -1;
