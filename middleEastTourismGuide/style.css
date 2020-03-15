@@ -9,7 +9,7 @@
 
 html {
     --imageAnimationTime: 17.5s;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg);
+    background-image: var(--imageOne);
     background-size: 100vw 100vh;
     background-position-x: center;
     background-attachment: fixed;
@@ -26,32 +26,50 @@ html {
     overflow-x: hidden;
 }
 
+:root {
+    --imageOne: url(1.jpg);
+    --imageTwo: url(2.jpg);
+    --imageThree: url(3.jpg);
+    --imageFour: url(4.jpg);
+    --imageFive: url(5.jpg);
+}
+
+@media all and (orientation: portrait) {
+    :root {
+        --imageOne: url(1mobile.jpg);
+        --imageTwo: url(2mobile.jpg);
+        --imageThree: url(3mobile.jpg);
+        --imageFour: url(4mobile.jpg);
+        --imageFive: url(5mobile.jpg);
+    }
+}
+
 @keyframes backgroundChange {
-    0% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}    19% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
-    20% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}    39% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
-    40% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}    59% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
-    60% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}    79% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
-    80% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}    99% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
+    0% {background-image: var(--imageOne)}    19% {background-image: var(--imageOne)}
+    20% {background-image: var(--imageTwo)}    39% {background-image: var(--imageTwo)}
+    40% {background-image: var(--imageThree)}    59% {background-image: var(--imageThree)}
+    60% {background-image: var(--imageFour)}    79% {background-image: var(--imageFour)}
+    80% {background-image: var(--imageFive)}    99% {background-image: var(--imageFive)}
 }
 
 @keyframes backgroundChangeOpacity {
-    0% {opacity: 1;background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
+    0% {opacity: 1;background-image: var(--imageOne)}
     1% {opacity: 1}    3% {opacity: 0}
-    4% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
-    15% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
+    4% {background-image: var(--imageOne)}
+    15% {background-image: var(--imageTwo)}
     16% {opacity: 0}    19% {opacity: 1}    21% {opacity: 1}    23% {opacity: 0}
-    24% {background-image: url(https://www.fodors.com/wp-content/uploads/2019/06/EgyptTours__HERO_CC_Giza_Pyramids_Desert_Camels.jpg)}
-    35% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
+    24% {background-image: var(--imageTwo)}
+    35% {background-image: var(--imageThree)}
     36% {opacity: 0}    39% {opacity: 1}    41% {opacity: 1}    43% {opacity: 0}
-    44% {background-image: url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/rr5zeQuWHMusl4I3h4iVm5KxylM=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/UMFZZPQ2VNAE3BCEA7ZFVPKBPU.jpg)}
-    55% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
+    44% {background-image: var(--imageThree)}
+    55% {background-image: var(--imageFour)}
     56% {opacity: 0}    59% {opacity: 1}    61% {opacity: 1}    63% {opacity: 0}
-    64% {background-image: url(https://geographical.co.uk/media/k2/items/cache/8dfdff0db32cfe67da2487cda126bd48_XL.jpg)}
-    75% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
+    64% {background-image: var(--imageFour)}
+    75% {background-image: var(--imageFive)}
     76% {opacity: 0}    79% {opacity: 1}    81% {opacity: 1}    83% {opacity: 0}
-    84% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/45/Karbala_City_3.jpg)}
-    95% {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
-    96% {opacity: 0}    99% {opacity: 1}    100% {opacity: 1;background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1200px-Riyadh_Skyline.jpg)}
+    84% {background-image: var(--imageFive)}
+    95% {background-image: var(--imageOne)}
+    96% {opacity: 0}    99% {opacity: 1}    100% {opacity: 1;background-image: var(--imageOne)}
 }
 
 html::-webkit-scrollbar { /* WebKit */
@@ -82,7 +100,7 @@ body {
 
 #top {
     top: 0;
-    position:absolute;
+    position: absolute;
 }
 
 .menu {
@@ -136,15 +154,14 @@ body {
 
 .title {
     text-align: center;
-    left: 0;
-    right: 0;
     position: absolute;
     top: 5%;
-    font-size: 100px;
+    font-size: 6.25em;
     color: white;
     font-family: "Sen Bold";
     text-shadow: 0 0 5px black,-1px -1px 5px black,1px 1px 5px black,-1px 1px 5px black,1px -1px 5px black,1px 0 5px black,0px 1px 5px black,0px -1px 5px black,-1px 0px 5px black;
     opacity: 0.8;
+    width: 100%;
 }
 
 .downArrow {
@@ -160,7 +177,7 @@ body {
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-direction: alternate;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes downArrowBob {
