@@ -154,39 +154,49 @@ body {
     bottom: 5%;
     filter: drop-shadow(0 0 0.75rem black);
     opacity: 0.8;
+    animation-name: downArrowBob;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes downArrowBob {
+    0% {bottom: 3%}
+    100% {bottom: 8%}
 }
 
 .contentBelow {
     width: 99%;
     left: 0.5%;
-    background-color: white;
     position: absolute;
-    height: 300%;
+    display: block;
+    height: fit-content;
     top: 100%;
-    border-radius: 20px;
     z-index: 1;
 }
 
 .contentBelowContainer {
     position: relative;
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
     width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+    padding-bottom: 0.57%;
 }
 
 .subheading {
     font-family: "Sen Bold";
     padding-left: 1.3%;
-    padding-top: 6%;
-    margin-top: -5%;
-    font-size: 48px
+    font-size: 48px;
+    padding-top: 1%;
 }
 
 p {
     font-family: "Sen";
     padding-left: 1.2%;
-    font-size: 20px
+    font-size: 20px;
 }
 
 a {
@@ -200,18 +210,16 @@ a:visited {
 }
 
 .topButton {
-    bottom: 0;
-    position: absolute;
     width: 5%;
-    left: 47.5%;
     transform: scaleY(-1);
     filter: drop-shadow(0 0 0.75rem black);
     opacity: 0.8;
 }
 
 .bottomBox {
-    position: absolute;
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;
     height: 10%;
-    top: 400%;
-    width: 100%; 
 }
