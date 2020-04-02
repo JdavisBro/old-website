@@ -48,10 +48,10 @@ function changeJdavis(){
 
 function setJdavisBox(){
     if (getCookie('jdavisBox')==="1") {
-        document.getElementById('jdavisBox').checked = true;
+        document.getElementById('jdavisBox2').checked = true;
     }
     else {
-        document.getElementById('jdavisBox').checked = false;
+        document.getElementById('jdavisBox').checked = true;
     }
 }
 
