@@ -21,11 +21,10 @@ function getStyle(){
         theme = getCookie('theme')
         if (theme==="1") {
             document.getElementById('pagetheme').setAttribute('href','/dark.css');
-            document.getElementById('toggleStyle').innerHTML = 'Light';
+
         } 
         else {
             document.getElementById('pagetheme').setAttribute('href','/light.css');
-            document.getElementById('toggleStyle').innerHTML = 'Dark';
         }
     }
 
@@ -33,11 +32,9 @@ function swapStyleSheet(){
     if (document.getElementById('pagetheme').getAttribute("href") === '/light.css') {
         setCookie('theme','1')
         document.getElementById('pagetheme').setAttribute('href','/dark.css');
-        document.getElementById('toggleStyle').innerHTML = 'Light';
     } else {
         setCookie('theme','0')
         document.getElementById('pagetheme').setAttribute('href','/light.css');
-        document.getElementById('toggleStyle').innerHTML = 'Dark';      
         }
    }
 

@@ -1,13 +1,14 @@
 html {
-    --bg-colour: #ff9400;
-    --main-text-colour: #aa00ff;
-    --h1-colour: #ee00ff;
-    --h2-colour: #cc00ff;
-    --h3-colour: #aa00ff;
+    --menu-bar-colour: #ffaf4d;
+    --bg-colour: #ffcb8b ;
+    --main-text-colour: #000000;
+    --h1-colour: #1b1b1b;
+    --h2-colour: #252525;
+    --h3-colour: #333333;
     --link-colour: #dd00ff;
     --visited-link-colour: #f060ff;
     --hover-menu-colour: #ffc000;
-    --current-menu-colour: orangered;
+    --current-menu-colour: #ff9a1f;
     --hover-current-menu-colour: #ff6000;
     --button-border-colour: #707070;
     --button-background-colour: #292929;

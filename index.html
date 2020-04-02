@@ -1,38 +1,61 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Home - JdavisBro</title>
-        <meta property="og:title" value="JdavisBro">
-        <meta property="og:description" value="JdavisBro Website Online Visit.">
-        <meta property="og:image" value="https://jdavisbro.github.io/images/pickaxe.gif">
-        <link rel="icon" type="image/ico" href="favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
-        <link rel="stylesheet" href="/dark.css">
-        <link id="pagetheme" rel="stylesheet" href="/light.css">
-        <link id="pagestyle" rel="stylesheet" href="/style.css">    
-        <script src="/main.js" type="text/javascript"></script>
-        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'>
-        <div class=sticky>
-            <div class=menu>
-                <a id="currentmenu" href="/">&nbspHome&nbsp</a>
-                <a id="menu" href="/images">&nbspImages&nbsp</a>
-                <a id="menu" href="/videos">&nbspVideos&nbsp</a>
-                <a id="menu" href="/playlists/">&nbspSpotify&nbsp</a>
-                <a id="menu" href="/givememoney/">&nbspGiveMeMoney&nbsp</a>
-                <a id="menu" href="/agaumb/">&nbspAGAUMb&nbsp</a>
-                <a id="menu" href="/why.html">&nbspwhy&nbsp</a>
-                <a id="menu" href="/woodFiredPizza/index.htm">&nbspWood&Pizza&nbsp</a>
-                <a id="menu" href="https://волк.xyz">&nbspволк&nbsp</a>
+<head>
+    <title>Home - JdavisBro</title>
+    <meta property="og:title" value="Home - JdavisBro">
+    <meta property="og:description" value="JdavisBro Website Online Visit.">
+    <meta property="og:image" value="https://jdavisbro.github.io/images/dab.gif">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
+    <link rel="stylesheet" href="/dark.css">
+    <link id="pagetheme" rel="stylesheet" href="/light.css">
+    <link id="pagestyle" rel="stylesheet" href="/style.css">    
+    <script src="/main.js" type="text/javascript"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'>
+    <div class=menubar>
+        <div class=menuTextContainer><h1>JdavisBro</h1></div>
+        <a class="menu currentmenu" href="/">Home</a>
+        <a class="menu" href="/images">Images</a>
+        <a class="menu" href="/videos">Videos</a>
+        <div class="menu dropdownMenu">
+            Other V
+            <div class="dropdownContent">
+                <a class="dropdownMenuOption" href="/playlists/">Spotify</a><br>
+                <a class="dropdownMenuOption" href="/givememoney/">GiveMeMoney</a><br>
+                <a class="dropdownMenuOption" href="/agaumb/">AGAUMb</a><br>
+                <a class="dropdownMenuOption" href="/why.html">why</a><br>
+                <a class="dropdownMenuOption" href="/woodFiredPizza/index.htm">Wood&Pizza</a><br>
+                <a class="dropdownMenuOption" href="https://волк.xyz">волк</a>
             </div>
-            <button id="toggleStyle" onClick="swapStyleSheet()">Dark</button>
         </div>
-        <script>getStyle();</script>
-    </head>
-    <body>
+        <div class="menu" style="width: 1%;background-color: var(--menu-bar-colour)"></div>
+    </div>
+</head>
+<body>
+    <div class=titleContainer>
         <b><h1>Welcome to JdavisBro's incredible website!</h1></b>
-        <h3><input id="jdavisBox" name="jdavisBox" value="1" onchange="changeJdavisBox()" type=checkbox>JdavisBro is gamer?</h3>
-        <h4>JdavisBro is<br><input id="jdavis" onchange="changeJdavis()" type=text placeholder="a gamer (epic!!)"></h4>
+    </div>
+    <div class=container>
+        <br>
+        <div class=jdavisBoxStuff>
+            <input id="jdavisBox" value="false" name="gamerCheck" onchange="changeJdavisBox()" type=radio>
+            <span>JdavisBro is gamer?</span>
+            <input id="jdavisBox2" value="true" name="gamerCheck" onchange="changeJdavisBox()" type=radio>
+        </div>
+        <br>
+        <span>
+            JdavisBro is 
+            <input id="jdavis" onchange="changeJdavis()" type=text placeholder="a gamer!">
+        </span>
         <script>setJdavis();setJdavisBox()</script>
-        <p>JdavisBro made a game: <a href="/agaumb" class=noLinkStyle style="color: lightcoral;">A Game About Ur Mums bananas</a></p>
-    </body>
+        <p>
+            JdavisBro made a game: 
+            <a href="/agaumb" class=noLinkStyle style="color: lightcoral;">
+                A Game About Ur Mums bananas
+            </a>
+        </p>
+        <button style="position:fixed;bottom:0;right:0;" id="toggleStyle" onclick="swapStyleSheet()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <script>getStyle();</script>
+    </div>
+</body>
 </html>
