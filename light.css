@@ -1,5 +1,8 @@
 html {
     --menu-bar-colour: #ffaf4d;
+    --hover-menu-colour: #ffc000;
+    --current-menu-colour: #ff9a1f;
+    --hover-current-menu-colour: #ffb42a;
     --bg-colour: #ffcb8b ;
     --main-text-colour: #000000;
     --h1-colour: #1b1b1b;
@@ -7,10 +10,5 @@ html {
     --h3-colour: #333333;
     --link-colour: #dd00ff;
     --visited-link-colour: #f060ff;
-    --hover-menu-colour: #ffc000;
-    --current-menu-colour: #ff9a1f;
-    --hover-current-menu-colour: #ff6000;
-    --button-border-colour: #707070;
     --button-background-colour: #292929;
-    --button-text-colour: #ff6600;
 }

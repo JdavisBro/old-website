@@ -7,11 +7,16 @@ HTML {
     background: var(--bg-colour);
     color: var(--main-text-colour);
     margin: 0;padding: 0;
-    font-family: "Arial Rounded MT Bold";
+    font-family: "Arial Rounded MT Bold", Arial;
     overflow-x: hidden;
     font-size: 1em;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+BODY {
+    margin: 0;padding: 0;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar { /* WebKit */
@@ -39,141 +44,6 @@ a:visited {
     color: var(--link-colour);
 }
 
-.menu {
-    display: inline-block;
-    background-color: var(--menu-bar-colour);
-    color: var(--h1-colour);
-    text-align: center;
-    text-decoration: none;
-    font-size: 22.5px;
-    width: 10%;
-    height: 1.87em;
-    font-size: 2em;
-    padding-top: 0.63em;
-}
-
-.menu:visited {
-    color: var(--h1-colour);
-}
-
-.menu:hover {
-    background-color: var(--hover-menu-colour);
-}
-
-.currentmenu {
-    background-color: var(--current-menu-colour);
-}
-
-.currentmenu:hover {
-    background-color: var(--hover-current-menu-colour);
-}
-
-.menubar {
-    z-index: 100;
-    background-color: var(--menu-bar-colour);
-    width: 100%;
-    height: 5em;
-    display: flex;
-    position: fixed;
-    text-align: right;
-    top:0px;
-    left:0px;
-}
-
-.menuTextContainer {
-    display: inline-block;
-    width: 60%;
-}
-
-.menubar h1 {
-    position: absolute;
-    left: 2%;
-    text-align: left;
-}
-
-.dropdownContent {
-    position: absolute;
-    top: 100%;
-    right: 1%;
-    height: 8em;
-    display: none;
-    background-color: var(--menu-bar-colour);
-    border-style: solid;
-    border-color: black;
-    width: 20%;
-}
-
-.dropdownMenu:hover {
-    background-color: var(--hover-menu-colour);
-}
-
-.dropdownMenu:hover .dropdownContent {
-    display: block;
-}
-
-.dropdownMenu:not(:hover) .dropdownContent {
-    display: none;
-}
-
-.dropdownContent a {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    color: var(--h1-colour);
-    text-decoration: none;
-    width: 100%;
-    border-top-style: solid;
-    border-top-width: 2px;
-    border-top-color: black;
-}
-
-.dropdownContent a:hover {
-    background-color: var(--hover-menu-colour);
-}
-
-button {
-    border-style: none;
-    border-radius: 20px 0 0 0;
-    background-color:var(--button-background-colour);
-    height: 5%;
-    color:var(--button-text-colour);
-    font-family: 'Finger Paint', cursive;
-}
-
-button:focus, input:focus{
-    outline: none;
-}
-
-.noLinkStyle {
-    text-decoration: none;
-    color: inherit;
-}
-
-.titleContainer {
-    top: 15%;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    height: 10%;
-}
-
-.titleContainer h1 {
-    position: relative;
-    left: 10%;
-}
-
-.container {
-    position: absolute;
-    left: 0;
-    padding-left: 1%;
-    top: 30%;
-    width: 100%;
-    background-color: var(--menu-bar-colour);
-    height: 70%;
-    font-size: 1.5em;
-}
-
 input[type=text] {
     background: var(--menu-bar-colour);
     color: var(--h4-colour);
@@ -195,4 +65,133 @@ input[type=text] {
 
 #jdavisBox:not(:checked) + span {
     color: green;
+}
+
+.menubar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--menu-bar-colour);
+    z-index: 1000;
+}
+
+.menuText {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 38vw;
+    height: 10vh;
+    padding-left: 2vw;
+    font-size: 2em;
+    line-height: 10vh;
+}
+
+.menuContainer {
+    display: inline-block;
+    position: absolute;
+    left: 38vw;
+    top: 0;
+    width: 62vw;
+    height: 10vh;
+    background-color: green;
+}
+
+.menu, .menu:visited {
+    display: block;
+    float: left;
+    top: 0;
+    height: 10vh;
+    width: 15vw;
+    line-height: 10vh;
+    font-size: 2em;
+    color: var(--h1-colour);
+    background-color: var(--menu-bar-colour);
+    text-decoration: none;
+    text-align: center;
+}
+
+.currentmenu, .currentmenu:visited {
+    background-color: var(--current-menu-colour)
+}
+
+.menu:hover, .menu:visited:hover {
+    background-color: var(--hover-menu-colour);
+}
+
+.currentmenu:hover, .currentmenu:visited:hover {
+    background-color: var(--hover-current-menu-colour);
+}
+
+.dropdownContent {
+    position: absolute;
+    top: 9.9vh;
+    right: 0;
+    width: 35vw;
+    border-style: solid;
+    border-width: 34x;
+    display: none;
+}
+
+.dropdownMenu:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent:hover {
+    display: block;
+}
+
+.dropdownMenu:not(:hover) .dropdownContent {
+    display: none;
+}
+
+.dropdownContent a {
+    display: block;
+    font-size: 1em;
+    height: 5vh;
+    line-height: 5vh;
+    text-decoration: none;
+    color: var(--h1-colour);
+    border-style: solid;
+    border-width: 2px;
+    width: 35vw;
+    background-color: var(--menu-bar-colour);
+}
+
+.dropdownContent a:hover {
+    background-color: var(--hover-menu-colour);
+}
+
+.titleContainer {
+    position: absolute;
+    top: 10vh;
+    height: 30vh;
+    line-height: 30vh;
+    font-size: 2.5em;
+    width: 99vw;
+    padding-left: 1vw;
+}
+
+.container {
+    position: absolute;
+    top: 40vh;
+    width: 99.5vw;
+    padding-left: 0.5vw;
+    height: 60vh;
+    font-size: 1.8em;
+    background-color: var(--menu-bar-colour)
+}
+
+#jdavisBox, #jdavisBox2 {
+    transform: scale(1.5);
+}
+
+#toggleStyle {
+    border-style: none;
+    border-radius: 10vh 0 0 0;
+    background-color: var(--button-background-colour);
+    height: 10vh;
+    width: 10vh;
 }
