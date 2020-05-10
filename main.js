@@ -20,20 +20,20 @@ function setCookie(cname, cvalue) {;
 function getStyle(){
         theme = getCookie('theme')
         if (theme==="1") {
-            document.getElementById('pagetheme').setAttribute('href','/dark.css');
+            document.getElementById('pagetheme').setAttribute('href','/light.css');
 
         } 
         else {
-            document.getElementById('pagetheme').setAttribute('href','/light.css');
+            document.getElementById('pagetheme').setAttribute('href','/dark.css');
         }
     }
 
 function swapStyleSheet(){
     if (document.getElementById('pagetheme').getAttribute("href") === '/light.css') {
-        setCookie('theme','1')
+        setCookie('theme','0')
         document.getElementById('pagetheme').setAttribute('href','/dark.css');
     } else {
-        setCookie('theme','0')
+        setCookie('theme','1')
         document.getElementById('pagetheme').setAttribute('href','/light.css');
         }
    }

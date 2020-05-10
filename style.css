@@ -87,6 +87,10 @@ input[type=text] {
     padding-left: 2vw;
     font-size: 2em;
     line-height: 10vh;
+    animation-name: menuHoverReverse;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
 }
 
 .menuContainer {
@@ -111,18 +115,51 @@ input[type=text] {
     background-color: var(--menu-bar-colour);
     text-decoration: none;
     text-align: center;
+    animation-name: menuHoverReverse;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
 }
 
 .currentmenu, .currentmenu:visited {
-    background-color: var(--current-menu-colour)
+    animation-name: currentMenuHoverReverse;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
 }
 
 .menu:hover, .menu:visited:hover {
-    background-color: var(--hover-menu-colour);
+    animation-name: menuHover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
 }
 
 .currentmenu:hover, .currentmenu:visited:hover {
-    background-color: var(--hover-current-menu-colour);
+    animation-name: currentMenuHover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes menuHover {
+    from {background-color: var(--menu-bar-colour);}
+    to {background-color: var(--hover-menu-colour);}
+}
+
+@keyframes menuHoverReverse {
+    from {background-color: var(--hover-menu-colour);}
+    to {background-color: var(--menu-bar-colour);}
+}
+
+@keyframes currentMenuHover {
+    from {background-color: var(--current-menu-colour);}
+    to {background-color: var(--hover-current-menu-colour);}
+}
+
+@keyframes currentMenuHoverReverse {
+    from {background-color: var(--hover-current-menu-colour);}
+    to {background-color: var(--current-menu-colour);}
 }
 
 .dropdownContent {
