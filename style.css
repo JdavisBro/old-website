@@ -4,7 +4,7 @@
 }
 
 HTML {
-    background: var(--bg-colour);
+    background: var(--bg-colour) no-repeat fixed center;
     color: var(--main-text-colour);
     margin: 0;padding: 0;
     font-family: "Arial Rounded MT Bold", Arial;
@@ -12,6 +12,10 @@ HTML {
     font-size: 1em;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    --dark-style-colour: #292929;
+    --light-style-colour: #ffaf4d;
+    --gay-style-colour: linear-gradient(180deg, #FE0000 16.66%,#FD8C00 16.66%, 33.32%,#FFE500 33.32%, 49.98%,#119F0B 49.98%, 66.64%,#0644B3 66.64%, 83.3%,#C22EDC 83.3%);
+    --trans-style-colour: linear-gradient(180deg, #5BCEFA 20%, #F5A9B8 20%, 40%, #FFFFFF 40%, 60%, #F5A9B8 60%, 80%, #5BCEFA 80%);
 }
 
 BODY {
@@ -100,7 +104,6 @@ input[type=text] {
     top: 0;
     width: 62vw;
     height: 10vh;
-    background-color: green;
 }
 
 .menu, .menu:visited {
@@ -223,12 +226,4 @@ input[type=text] {
 
 #jdavisBox, #jdavisBox2 {
     transform: scale(1.5);
-}
-
-#toggleStyle {
-    border-style: none;
-    border-radius: 10vh 0 0 0;
-    background-color: var(--button-background-colour);
-    height: 10vh;
-    width: 10vh;
 }

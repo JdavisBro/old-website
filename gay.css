@@ -1,0 +1,14 @@
+html {
+    --menu-bar-colour: transparent;
+    --bg-colour: linear-gradient(180deg, #FE0000 16.66%,#FD8C00 16.66%, 33.32%,#FFE500 33.32%, 49.98%,#119F0B 49.98%, 66.64%,#0644B3 66.64%, 83.3%,#C22EDC 83.3%);
+    --main-text-colour: black;
+    --h1-colour: black;
+    --h2-colour: grey;
+    --h3-colour: gray;
+    --link-colour: cyan;
+    --visited-link-colour: darkcyan;
+    --hover-menu-colour: rgba(0,0,0,0.3);
+    --current-menu-colour: rgba(0,0,0,0.2);
+    --hover-current-menu-colour: rgba(0,0,0,0.5);
+    --button-background-colour: #ff9400;
+}

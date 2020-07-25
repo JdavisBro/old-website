@@ -14,29 +14,44 @@ function getCookie(cname) {
     return "";}
 
 function setCookie(cname, cvalue) {;
-        document.cookie = cname + "=" + cvalue + ";path=/";
+        document.cookie = cname + "=" + cvalue + ";Secure;SameSite=Lax;path=/";
     }
 
 function getStyle(){
-        theme = getCookie('theme')
-        if (theme==="1") {
-            document.getElementById('pagetheme').setAttribute('href','/light.css');
-
-        } 
-        else {
+    theme = getCookie('theme')
+    switch(theme) {
+        case "1":
             document.getElementById('pagetheme').setAttribute('href','/dark.css');
+            break;
+        case "2":
+            document.getElementById('pagetheme').setAttribute('href','/light.css');
+            break;
+        case "3":
+            document.getElementById('pagetheme').setAttribute('href','/gay.css');
+            break;
+        case "4":
+            document.getElementById('pagetheme').setAttribute('href','/trans.css');
+            break;
         }
-    }
+}
 
-function swapStyleSheet(){
-    if (document.getElementById('pagetheme').getAttribute("href") === '/light.css') {
-        setCookie('theme','0')
+function swapStyleSheet(number) {
+    setCookie('theme',number)
+    switch(number) {
+    case 1:
         document.getElementById('pagetheme').setAttribute('href','/dark.css');
-    } else {
-        setCookie('theme','1')
+        break;
+    case 2:
         document.getElementById('pagetheme').setAttribute('href','/light.css');
-        }
-   }
+        break;
+    case 3:
+        document.getElementById('pagetheme').setAttribute('href','/gay.css');
+        break;
+    case 4:
+        document.getElementById('pagetheme').setAttribute('href','/trans.css');
+        break;
+    }
+}
 
 function setJdavis(){
     document.getElementById('jdavis').value = getCookie('jdavis')
