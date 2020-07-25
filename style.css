@@ -86,7 +86,7 @@ input[type=text] {
     position: absolute;
     left: 0;
     top: 0;
-    width: 38vw;
+    width: 35vw;
     height: 10vh;
     padding-left: 2vw;
     font-size: 2em;
@@ -100,9 +100,9 @@ input[type=text] {
 .menuContainer {
     display: inline-block;
     position: absolute;
-    left: 38vw;
+    left: 35vw;
     top: 0;
-    width: 62vw;
+    width: 65vw;
     height: 10vh;
 }
 
