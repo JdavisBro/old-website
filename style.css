@@ -79,6 +79,8 @@ input[type=text] {
     height: 10vh;
     background-color: var(--menu-bar-colour);
     z-index: 1000;
+    background: var(--bg-colour);
+    background-size: 100vw 100vh;
 }
 
 .menuText {
@@ -86,7 +88,7 @@ input[type=text] {
     position: absolute;
     left: 0;
     top: 0;
-    width: 35vw;
+    width: 33vw;
     height: 10vh;
     padding-left: 2vw;
     font-size: 2em;
