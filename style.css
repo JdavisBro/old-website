@@ -4,11 +4,12 @@
 }
 
 HTML {
-    background: var(--bg-colour) no-repeat fixed center;
+    background: var(--bg-colour) no-repeat fixed top center;
     color: var(--main-text-colour);
     margin: 0;padding: 0;
     font-family: "Arial Rounded MT Bold", Arial;
     overflow-x: hidden;
+    top: 0;
     font-size: 1em;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -21,6 +22,7 @@ HTML {
 BODY {
     margin: 0;padding: 0;
     overflow-x: hidden;
+    top: 0;
 }
 
 html::-webkit-scrollbar { /* WebKit */
@@ -169,12 +171,15 @@ input[type=text] {
 
 .dropdownContent {
     position: absolute;
-    top: 9.9vh;
+    top: 10vh;
     right: 0;
     width: 35vw;
     border-style: solid;
-    border-width: 34x;
     display: none;
+    background: var(--bg-colour);
+    background-origin: border-box;
+    background-position: 0 -10vh;
+    background-size: 100vw 100vh;
 }
 
 .dropdownMenu:hover .dropdownContent {
