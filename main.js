@@ -33,6 +33,7 @@ function getStyle(){
             document.getElementById('pagetheme').setAttribute('href','/trans.css');
             break;
         }
+    checkUrlTheme()
 }
 
 function swapStyleSheet(number) {
@@ -140,4 +141,23 @@ function uhohfunction(size,plmi){
         plmi = 0
     }
     setTimeout(uhohfunction,uhspeed,size,plmi)
+}
+
+function checkUrlTheme()
+{
+    var query = window.location.search.substring(1);
+    switch(query) {
+        case "dark":
+            swapStyleSheet(1);
+            break;
+        case "light":
+            swapStyleSheet(2);
+            break;
+        case "gay":
+            swapStyleSheet(3);
+            break;
+        case "trans":
+            swapStyleSheet(4);
+            break;
+    }
 }
