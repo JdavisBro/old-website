@@ -221,7 +221,7 @@ input[type=text] {
     padding-left: 1vw;
 }
 
-.container {
+.homeContainer {
     position: absolute;
     top: 40vh;
     width: 99.5vw;
@@ -230,6 +230,17 @@ input[type=text] {
     font-size: 1.8em;
     background-color: var(--menu-bar-colour)
 }
+
+.container {
+    position: absolute;
+    top: 10vh;
+    width: 99.5vw;
+    padding-left: 0.5vw;
+    height: 60vh;
+    font-size: 1.8em;
+    background-color: var(--bg-colour)
+}
+
 
 #jdavisBox, #jdavisBox2 {
     transform: scale(1.5);
