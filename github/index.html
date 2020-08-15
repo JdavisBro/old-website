@@ -93,7 +93,11 @@
             <script>githubEmbed("toycatnet","JdavisBro/toycat.net")</script>
         </div>
 
+        <br>
+
+        Last Reload: <button onclick="sessionStorage.clear();location.reload()">Reload</button> <p id=reloadFeller style="display:inline-block">Never</p>
+
     </div>
-    <script>getStyle();</script>
+    <script>getStyle();reloadFeller()</script>
 </body>
 </html>

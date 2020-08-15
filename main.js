@@ -164,21 +164,39 @@ function checkUrlTheme()
 
 
 function githubEmbed(embedId,githubUrl) {
+    if (sessionStorage.getItem(embedId)) {
+        editEmbed(embedId,JSON.parse(sessionStorage.getItem(embedId)));
+        return;
+    }
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var repo = JSON.parse(xhttp.responseText)
-            var embed = document.getElementById(embedId);
-            itemsOne = embed.getElementsByClassName("repoItems")[0]
-            itemsTwo = embed.getElementsByClassName("repoItems")[1]
-            itemsOne.getElementsByClassName("repoLanguage")[0].innerHTML = repo.language
-            itemsOne.getElementsByClassName("repoForks")[0].innerHTML = repo.forks_count
-            itemsOne.getElementsByClassName("repoCreated")[0].innerHTML = repo.created_at.substring(0, repo.created_at.indexOf('T'))
-            itemsTwo.getElementsByClassName("repoUpdated")[0].innerHTML = repo.pushed_at.substring(0, repo.pushed_at.indexOf('T'))
-            itemsTwo.getElementsByClassName("repoIssues")[0].innerHTML = repo.open_issues_count
-            itemsTwo.getElementsByClassName("repoWatchers")[0].innerHTML = repo.watchers_count
+            editEmbed(embedId,repo);
+            sessionStorage.setItem(embedId,xhttp.responseText);
+            sessionStorage.setItem("lastUpdate",Date.now());
+            reloadFeller()
         }
     };
     xhttp.open("GET", "https://api.github.com/repos/"+githubUrl, true);
     xhttp.send();
+}
+
+function editEmbed(embedId,repo) {
+    var embed = document.getElementById(embedId);
+    itemsOne = embed.getElementsByClassName("repoItems")[0];
+    itemsTwo = embed.getElementsByClassName("repoItems")[1];
+    itemsOne.getElementsByClassName("repoLanguage")[0].innerHTML = repo.language;
+    itemsOne.getElementsByClassName("repoForks")[0].innerHTML = repo.forks_count;
+    itemsOne.getElementsByClassName("repoCreated")[0].innerHTML = repo.created_at.substring(0, repo.created_at.indexOf('T'));
+    itemsTwo.getElementsByClassName("repoUpdated")[0].innerHTML = repo.pushed_at.substring(0, repo.pushed_at.indexOf('T'));
+    itemsTwo.getElementsByClassName("repoIssues")[0].innerHTML = repo.open_issues_count;
+    itemsTwo.getElementsByClassName("repoWatchers")[0].innerHTML = repo.watchers_count;
+}
+
+function reloadFeller() {
+    if (sessionStorage.getItem("lastUpdate")) {
+        var date = new Date(Number(sessionStorage.getItem("lastUpdate"))).toString()
+        document.getElementById("reloadFeller").innerHTML = date.substring(0,date.indexOf("GMT"));
+    }
 }
