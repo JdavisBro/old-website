@@ -161,3 +161,24 @@ function checkUrlTheme()
             break;
     }
 }
+
+
+function githubEmbed(embedId,githubUrl) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var repo = JSON.parse(xhttp.responseText)
+            var embed = document.getElementById(embedId);
+            itemsOne = embed.getElementsByClassName("repoItems")[0]
+            itemsTwo = embed.getElementsByClassName("repoItems")[1]
+            itemsOne.getElementsByClassName("repoLanguage")[0].innerHTML = repo.language
+            itemsOne.getElementsByClassName("repoForks")[0].innerHTML = repo.forks_count
+            itemsOne.getElementsByClassName("repoCreated")[0].innerHTML = repo.created_at.substring(0, repo.created_at.indexOf('T'))
+            itemsTwo.getElementsByClassName("repoUpdated")[0].innerHTML = repo.pushed_at.substring(0, repo.pushed_at.indexOf('T'))
+            itemsTwo.getElementsByClassName("repoIssues")[0].innerHTML = repo.open_issues_count
+            itemsTwo.getElementsByClassName("repoWatchers")[0].innerHTML = repo.watchers_count
+        }
+    };
+    xhttp.open("GET", "https://api.github.com/repos/"+githubUrl, true);
+    xhttp.send();
+}

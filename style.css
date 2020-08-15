@@ -245,3 +245,118 @@ input[type=text] {
 #jdavisBox, #jdavisBox2 {
     transform: scale(1.5);
 }
+
+.repo {
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px 10px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+}
+
+.repoTitle {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    top: -0.1vh;
+    width: 100%;
+    height: 12vh;
+    background-color: #24292e;
+    border-radius: 10px 10px 0 0;
+    border-top: solid grey 1px;
+}
+
+.repoAuthor {
+    text-decoration: none;
+    font-size: 0.8em;
+    width: 35%;
+    text-align: center;
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+    color: white;
+}
+
+.repoAuthor:after {
+    content: " /";
+    color: grey;
+}
+
+.repoName {
+    text-decoration: none;
+    padding-left: 1vw;
+    font-size: 1.5em;
+    width: 75%;
+    text-align: center;
+    color: lightblue;
+
+}
+
+.repoIcon {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+.repoContent {
+    height: 22vh;
+}
+
+.repoDescs {
+    position: relative;
+    display: inline-block;
+    top: 1.5vh;
+    width: 100%;
+    left: 0;
+    color: #3F3F3F;
+    font-size: 0.5em;
+    white-space: nowrap;
+    text-align: initial;
+}
+
+.rDone {
+    position: relative;
+    display: inline-block;
+    left: 1%;
+    width: 32%;
+    text-align: center;
+}
+
+.rDtwo {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    left: 1%;
+    text-align: center;
+}
+
+.rDthree {
+    position: absolute;
+    display: inline-block;
+    width: 32%;
+    right: 1%;
+    text-align: center;
+}
+
+
+.repoItems {
+    position: relative;
+    display: inline-block;
+    top: 1.5vh;
+    width: 100%;
+    left: 0;
+    color: #3F3F3F;
+    font-size: 0.8em;
+    white-space: nowrap;
+    text-align: initial;
+}
+
+@media (orientation: portrait) {
+    .repoIcon {
+        display: none;
+        visibility: hidden;
+    }
+}
