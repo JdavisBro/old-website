@@ -8,8 +8,8 @@
     <div id=text style="width: 100%;text-align: center;top: 40%;position: absolute;left:0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;">Redirecting...</div><img src=loading.gif style="width:3vw;height:3vw;position: absolute;left:48.5vw;top: 50vh">
     <script>
         if (window.location.search.substring(1) != "") {
-            document.getElementById("title").innerHTML = "Redirecting to " + window.location.search.substring(1).replace("/","").replace("-"," ").charAt(0).toUpperCase() + window.location.search.substring(1).replace("-"," ").replace("/","").slice(1) + " - Checking Browser, please wait.";
-            document.getElementById("text").innerHTML = "Redirecting to " + window.location.search.substring(1).replace("/","").replace("-"," ").charAt(0).toUpperCase() + window.location.search.substring(1).replace("-"," ").replace("/","").slice(1) + "...<br>Checking Browser, please wait.";
+            document.getElementById("title").innerHTML = "Redirecting to '" + window.location.search.substring(1).replaceAll("/","").replaceAll("-"," ").charAt(0).toUpperCase() + window.location.search.substring(1).slice(1).replaceAll("-"," ").replaceAll("/","") + "' - Checking Browser, please wait.";
+            document.getElementById("text").innerHTML = "Redirecting to '" + window.location.search.substring(1).replaceAll("/","").replaceAll("-"," ").charAt(0).toUpperCase() + window.location.search.substring(1).slice(1).replaceAll("-"," ").replaceAll("/","") + "'...<br>Checking Browser, please wait.";
         } else {
             document.getElementById("title").innerHTML = "Redirecting to page - Checking Browser, please wait.";
             document.getElementById("text").innerHTML = "Redirecting to page...<br>Checking Browser, please wait.";
